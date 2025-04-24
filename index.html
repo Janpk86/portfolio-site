@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">🏠 Home</a></li>
+        <li><a href="#projects">💼 Projects</a></li>
+        <li><a href="#roles">🛠️ Skills</a></li>
+        <li><a href="#contact">📨 Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Your Photo" class="profile-pic">
+      <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
+      <p class="title">Web Developer | SEO Specialist | Freelancer</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>📈 SEO Dashboard</h3>
+        <p><strong>Role:</strong> SEO Consultant</p>
+        <p><strong>Stack:</strong> JS, Chart.js, Bootstrap</p>
+        <p>Custom dashboard for German client to visualize SEO performance.</p>
+      </div>
+      <div class="project-card">
+        <h3>🛒 Shopify Store</h3>
+        <p><strong>Role:</strong> Frontend Dev</p>
+        <p><strong>Stack:</strong> HTML, Liquid, JS</p>
+        <p>Custom theme optimized for conversions & fast performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="roles" class="section">
+    <h2>What I Do</h2>
+    <ul class="roles-list">
+      <li>✨ Creative UI Design</li>
+      <li>⚙️ SEO Optimization</li>
+      <li>💻 Responsive Development</li>
+      <li>🧠 Strategy & Analytics</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <h2>Let's Connect</h2>
+    <form onsubmit="return handleForm(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
