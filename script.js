@@ -1,0 +1,14 @@
+function handleForm(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (name && email && message) {
+    alert(`Thanks ${name}! I'll get back to you at ${email}.`);
+    document.querySelector("form").reset();
+  } else {
+    alert("Please fill out all fields.");
+  }
+}
